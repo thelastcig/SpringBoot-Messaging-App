@@ -30,11 +30,11 @@ Takes a name as a query parameter and returns a personalized greeting.
 
 - **Endpoint**:
 ```
-GET /hello/query?name={name}
+GET /query?name={name}
 ```
 -**Example Request:**
 ```
-GET /hello/query?name=Mark
+GET /query?name=Mark
 ```
 -**Response:**
 ```
@@ -42,7 +42,7 @@ GET /hello/query?name=Mark
 ```
 -**CURL Command:**
 ```
-curl -X GET "http://localhost:8080/hello/query?name=Mark" -w "\n"
+curl -X GET "http://localhost:8080/query?name=Mark" -w "\n"
 ```
 
 ### 📌 UC-3: GET Request with Path Variable
@@ -51,11 +51,11 @@ Takes a name as a path variable and returns a personalized greeting.
 - **Endpoint**:
 
 ```
-GET /hello/param/{name}
+GET /param/{name}
 ```
 -**Example Request:**
  ```
-GET /hello/param/Mark
+GET /param/Mark
 ```
 -**Response:**
 ```
@@ -63,7 +63,7 @@ GET /hello/param/Mark
 ```
 -**CURL Command:**
 ```
-curl -X GET "http://localhost:8080/hello/param/Mark" -w "\n"
+curl -X GET "http://localhost:8080/param/Mark" -w "\n"
 ```
 
 ### 📬 UC-4: POST Request with JSON Body
@@ -71,7 +71,7 @@ Accepts a firstName and lastName in the request body and returns a greeting.
 
 - **Endpoint**:
 ```
-POST /hello/post
+POST /post
 ```
 -**Request Body:**
 ```
@@ -86,7 +86,7 @@ POST /hello/post
 ```
 -**CURL Command:**
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"firstName": "Mark", "lastName": "Taylor"}' "http://localhost:8080/hello/post" -w "\n"
+curl -X POST -H "Content-Type: application/json" -d '{"firstName": "Mark", "lastName": "Taylor"}' "http://localhost:8080/post" -w "\n"
 ```
 
 ### 🔄 UC-5: PUT Request with Path Variable and Query Parameter
@@ -94,11 +94,11 @@ Accepts firstName as a path variable and lastName as a query parameter.
 
 - **Endpoint**:
 ```
-PUT /hello/put/{firstName}?lastName={lastName}
+PUT /put/{firstName}?lastName={lastName}
 ```
 -**Example Request:**
 ```
-PUT /hello/put/Mark?lastName=Taylor
+PUT /put/Mark?lastName=Taylor
 ```
 -**Response:**
 ```
@@ -106,7 +106,7 @@ PUT /hello/put/Mark?lastName=Taylor
 ```
 -**CURL Command:**
 ```
-curl -X PUT "http://localhost:8080/hello/put/Mark?lastName=Taylor" -w "\n"
+curl -X PUT "http://localhost:8080/put/Mark?lastName=Taylor" -w "\n"
 ```
 ### 📂 Project Structure
 
