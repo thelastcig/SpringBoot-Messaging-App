@@ -24,7 +24,11 @@ public class HelloWorld {
         return "Hello " + name + "!";
     }
 
-   
+    //UC-3 Parameter using Path Variable
+    @GetMapping("/param/{name}")
+    public String sayHelloParam(@PathVariable("name") String name){
+        return "Hello " + name + "!";
+    }   
     
     
 }
