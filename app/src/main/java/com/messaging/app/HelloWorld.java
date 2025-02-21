@@ -31,7 +31,7 @@ public class HelloWorld {
         return "Hello " + name + "!";
     }   
 
-    //UC-4 Use           and pass first name and last name in the Body
+    //UC-4 Use and pass first name and last name in the Body
     @PostMapping("/post")
     public String sayHelloPost(@RequestBody User user){
         return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz!";
